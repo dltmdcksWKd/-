@@ -1,0 +1,15 @@
+def solution(s):
+    a = 0
+    b = 0
+    for i in range(len(s)):
+        if s[i] == '1':
+            a += 1
+        else:
+            b += 1
+    return recursions(a)
+def recursions(s):
+    if s == '1':
+        return
+    else:
+        return 
+print(solution("110010101001"))
