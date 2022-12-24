@@ -1,0 +1,49 @@
+# def solution(food):
+#     b = []
+#     answer = ''
+#     for i in range(len(food)):
+#         if i != 0:
+#             a = food[i] // 2
+#             b.append(str(i) * a)
+#     for j in range(len(b)):
+#         answer += b[j]
+#     answer += '0'
+#     b.reverse()
+#     for k in range(len(b)):
+#         answer += b[k]
+#     return answer
+
+# def solution(k, m, score):
+#     answer = 0
+#     score.sort(reverse=True)
+#     for i in range(len(score) // m):
+#         answer += score[(m * (i + 1)) - 1] * m
+#     return answer
+# print(solution(4,3,[4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2]))
+
+# def solution(t, p):
+#     answer = 0
+#     for i in range(len(t)-(len(p)-1)):
+#         a = t[i:i+len(p)]
+#         if int(a) <= int(p):
+#             answer +=1
+#     return answer
+# print(solution("500220839878","7"))
+
+120866
+ 
+def solution(board):
+    answer = 0
+    a = len(board[1])
+    for i in range(a):
+        for j in range(a):
+            if board[i][j] == 1:
+                if i == 0:
+    for k in board:
+        answer += k.count(0)
+    return answer
+print(solution([[0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0],
+                [0, 0, 0, 0, 0]]))
